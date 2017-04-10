@@ -1,0 +1,77 @@
+body{
+  color: aliceblue;
+  background-image: url("./img/background_car_race2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 100vw;
+  min-height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+.racer_table td {
+  /*background-color: peru;*/
+  height: 60px;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid peru;
+  border-top: 1px solid peru;
+  background-color: skyblue;
+}
+
+.racer_table td.active {
+  background-color: skyblue;
+  background-image: url("./img/large_car.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+td.goal{
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;	
+  background-image: url("./img/meta.png");
+  background-size: contain;
+}
+
+.racer_table{
+  font-size: 26px;
+  color:aliceblue;
+}
+
+button{
+  margin-top: 15px;
+}
+
+.counter{
+  border: 1px solid peru;
+  display: inline-block;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  font-size: 28px;
+}
+
+.start-game{
+  border: 1px solid peru;
+  padding: 10px;
+  border-radius: 5px;
+  color: peru;
+  background-color:transparent;
+  display: flex;
+}
+
+.track{
+  margin-top: 20px;
+}
+
+td.player1, td.player2{
+  color: floralwhite;
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+h4{
+  margin-top: 30px;
+}
