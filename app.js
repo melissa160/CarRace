@@ -41,21 +41,21 @@ function players(){
 function pushForward(player){
     if ($(`#${player}_strip td:last-child`).hasClass("goal active")){
       var text = winnersName(player)
-      $('.racer_table').text(text)
+      $('.racer_table').text(`${text} is the winner!!`)
       // alert(`el ${player} gano`)
     }else{
       $(`#${player}_strip`).find('.active').removeClass("active").next().addClass("active");  
     }
 }
 function winnersName(player){
-  var winnerText = ""
+  var winner = ""
   if (player == "player1"){
-    winnerText = `${player1} es el ganador!!`
+    winner = player1
   }
   else{
-    winnerText = `${player2} es el ganador!!`
+    winner = player2
   }
-  return winnerText
+  return winner
 }
 
 var update_countdown = function() {
